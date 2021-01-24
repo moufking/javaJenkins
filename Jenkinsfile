@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh " cd  javaJenkinsjava/ && java Main"
+                sh " cd  javaJenkins/ && java Main"
             }
         }
     }
