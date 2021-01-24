@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                sh "cd  javaJenkins/"
                 sh "javac Main.java"
             }
         }
