@@ -9,13 +9,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh "cd  javaJenkins/"
-                sh "javac Main.java"
+                sh "cd  javaJenkins/ && javac Main.java"
             }
         }
         stage('Run') {
             steps {
-                sh "java Main"
+                sh " cd  javaJenkinsjava/ && java Main"
             }
         }
     }
